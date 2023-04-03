@@ -17,7 +17,7 @@
 .menu a { /* a: 파란색, 밑줄 스타일로 가지고 있음*/
     color: white;
     text-decoration: none;  /* 텍스트 꾸밈 속성 */
-    margin: 0px 20px;
+    margin: 0px 10px;
     font-size: 14px;
     font-weight: bold; /* 글자 두께: 두껍게*/
 }
@@ -115,4 +115,37 @@ hr {
 .info p:nth-child(2) {
     font-size: 11px;
     text-transform: uppercase;
+}
+
+/* media query */
+@media screen and (max-width: 360px) {
+    .hero_img {
+        width: 100%;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+    .hero_img {
+        height: auto;
+    }
+
+    .clips {
+        max-width: 300px; /*최대 넓이*/
+        flex-direction: column; /* 플렉스 방향: 컬럼(=열, 수직)*/
+    }
+    .clip:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    hr {
+        margin: 30px 0 0 0;
+    }
+
+    .info {
+        background-color: #005891;
+        color: white;
+        padding: 30px 0;
+    }
+    
+    
 }
